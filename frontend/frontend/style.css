@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f5;
+    color: #26352d;
+}
+
+.header {
+    background: #176b48;
+    color: white;
+    padding: 25px 7%;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.header p {
+    margin-top: 6px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.welcome p {
+    color: #69776e;
+    margin-top: 8px;
+}
+
+#today {
+    color: #176b48;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card, .panel {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card p {
+    color: #68766d;
+    margin-bottom: 12px;
+}
+
+.card h2 {
+    font-size: 27px;
+}
+
+.income h2 {
+    color: #16834c;
+}
+
+.expense h2 {
+    color: #dc4949;
+}
+
+.panel {
+    margin-bottom: 25px;
+}
+
+.panel h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5ded8;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    background: #176b48;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #105438;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e8eee9;
+}
+
+th {
+    background: #edf5ef;
+}
+
+.income-text {
+    color: #16834c;
+    font-weight: bold;
+}
+
+.expense-text {
+    color: #dc4949;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background: #dc4949;
+    padding: 8px 12px;
+}
+
+.category-item {
+    margin-bottom: 18px;
+}
+
+.category-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.bar-bg {
+    height: 10px;
+    background: #e5eee7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background: #279565;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #68766d;
+}
+
+@media (max-width: 700px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
+
+filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+    }
+}
+
+monthly-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 15px;
+    min-height: 220px;
+    padding: 20px 5px;
+    overflow-x: auto;
+}
+
+.month-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 65px;
+    flex: 1;
+}
+
+.bar-pair {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6px;
+    height: 160px;
+}
+
+.chart-bar {
+    width: 20px;
+    min-height: 2px;
+    border-radius: 5px 5px 0 0;
+}
+
+.income-bar {
+    background: #168653;
+}
+
+.expense-bar {
+    background: #dc6868;
+}
+
+.month-label {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.income-legend {
+    color: #168653;
+}
+
+.expense-legend {
+    color: #dc6868;
+}
