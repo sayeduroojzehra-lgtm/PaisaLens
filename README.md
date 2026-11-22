@@ -74,7 +74,7 @@ Windows PowerShell:
 ### 4. Install dependencies
 
 ```bash
-python -m pip install fastapi uvicorn sqlalchemy
+python -m pip install -r requirements.txt
 ```
 
 ### 5. Start the backend server
