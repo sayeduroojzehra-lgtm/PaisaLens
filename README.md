@@ -2,7 +2,7 @@
 
 ### Personal Finance Dashboard
 
-PaisaLens is a personal finance management application designed to help users track their income and expenses, understand their spending patterns, and monitor their financial balance through a simple dashboard.
+PaisaLens is a personal finance management application designed to help users track their income and expenses, understand their spending patterns, and monitor their financial balance through a simple and interactive dashboard.
 
 ## Problem Statement
 
@@ -45,6 +45,7 @@ PaisaLens/
 │       ├── script.js
 │       └── style.css
 ├── .gitignore
+├── requirements.txt
 └── README.md
 ```
 
@@ -65,7 +66,7 @@ python -m venv .venv
 
 ### 3. Activate the virtual environment
 
-Windows PowerShell:
+For Windows PowerShell:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
@@ -83,7 +84,7 @@ python -m pip install -r requirements.txt
 python -m uvicorn backend.main:app --reload
 ```
 
-Backend:
+Backend URL:
 
 http://127.0.0.1:8000
 
@@ -93,7 +94,7 @@ http://127.0.0.1:8000/docs
 
 ### 6. Run the frontend
 
-Open the frontend using VS Code Live Server:
+Open the following file using VS Code Live Server:
 
 ```text
 frontend/frontend/index.html
@@ -111,11 +112,25 @@ frontend/frontend/index.html
 | GET | `/summary` | Retrieve financial summary |
 | GET | `/categories/summary` | Retrieve category-wise summary |
 
+## AI Models and APIs Used
+
+PaisaLens currently uses a rule-based approach to calculate income, expenses, account balance, and category-wise spending summaries.
+
+No AI models or external AI APIs are currently integrated into this version.
+
+## Demo Video
+
+Watch the working demonstration of PaisaLens:
+
+[**PaisaLens – Arthaton 2026 Demo**](https://youtu.be/KLE8Z0m8NYw)
+
 ## Future Improvements
 
 - Budget planning and monthly spending limits.
 - Visual spending trends and reports.
-- Improved financial insights.
+- AI-assisted expense insights.
+- Spending pattern analysis.
+- Personalized financial recommendations.
 - Secure user authentication.
 - Exportable financial reports.
 
@@ -123,8 +138,9 @@ frontend/frontend/index.html
 
 **Project:** PaisaLens  
 **Category:** Personal Finance Management  
-**Repository:** https://github.com/sayeduroojzehra-lgtm/PaisaLens
+**Repository:** https://github.com/sayeduroojzehra-lgtm/PaisaLens  
+**Demo Video:** https://youtu.be/KLE8Z0m8NYw
 
 ---
 
-*PaisaLens – Bringing clarity to personal finances.*
+*PaisaLens – Bringing clarity to personal finance.*
